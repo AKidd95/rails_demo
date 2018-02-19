@@ -1,5 +1,5 @@
 <% @articles.each do |article| %>
+  <p><%= link(:url => '/', :text => 'new article') %></p>
   <p><%= article.title%></p>
   <p><%= article.content %></p>
 <% end %>
-  
