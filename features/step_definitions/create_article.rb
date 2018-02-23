@@ -6,10 +6,8 @@ When("I click {string} link") do |string|
   page.click_link('new article')
 end
 
-When("I fill in {string} with {string}") do |string, string2|
-  field_labeled("Title", disabled: true)
-  fill_in(string, :with => string2, visible: false)
-  #fill_in('Content', :with => 'Excited about learning a new framework')
+When("I fill in {string} with {string}") do |title, content|
+  fill_in(title, :with => content)
 end
 
 When("I click {string} button") do |string|
