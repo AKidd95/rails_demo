@@ -16,5 +16,5 @@ Then("I should be on the {string} page") do |article_title|
 end
 
 Then("i should see {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_content string # Write code here that turns the phrase above into concrete actions
 end
