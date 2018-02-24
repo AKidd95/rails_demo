@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'comments/create'
 
   get 'articles/index'
 
