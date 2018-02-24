@@ -7,7 +7,7 @@ When("I fill in {string} with {string}") do |input, value|
 end
 
 When("I click {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  click_link_or_button(string)
 end
 
 Then("I should be on the {string} page") do |article_title|
