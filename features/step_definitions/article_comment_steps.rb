@@ -2,8 +2,8 @@ When("I click on {string}") do |link_text|
   click_link_or_button link_text # Write code here that turns the phrase above into concrete actions
 end
 
-When("I fill in {string} with {string}") do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
+When("I fill in {string} with {string}") do |input, value|
+  fill_in(input, :with => value) # Write code here that turns the phrase above into concrete actions
 end
 
 When("I click {string}") do |string|
