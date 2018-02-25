@@ -5,5 +5,13 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @article.text %>
+  <%= @article.content %>
 </p>
+
+<%= form_with model: Comment.new, local: true do |form| %>
+  <%= form.label :email %>
+  <%= form.email_field :email %>
+  <%= form.label :body, value: 'Comment' %>
+  <%= form.text_field :body %>
+  <%= form.submit %>
+<% end %>
