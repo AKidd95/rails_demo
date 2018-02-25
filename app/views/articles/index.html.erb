@@ -7,12 +7,10 @@
   </tr>
 
   <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title%></td>
-      <td><%= article.content %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td>Authored by <%= article.author %> at <%= article.created_at %></td>
-    </tr>
+      <p><%= article.title%></p>
+      <p><%= article.content %></p>
+      <p><%= link_to 'Show', article_path(article) %></p>
+      <p>Written by <%= article.author %> at <%= article.created_at %></p>
   <% end %>
 </table>
 
