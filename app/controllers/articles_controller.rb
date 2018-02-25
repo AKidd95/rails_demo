@@ -8,11 +8,18 @@ class ArticlesController < ApplicationController
   end
 
   def new
+    @article = Article.new
   end
 
   def create
-    @article = Article.new(params.require(:article).permit(:title, :content))
+    @article = Article.new(article_params)
     @article.save
     redirect_to @article
+  end
+
+  private
+
+  def article_params
+      params[:article].permit{:title, :content, :author}
   end
 end
