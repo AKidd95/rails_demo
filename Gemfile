@@ -10,6 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'launchy', '~> 2.4', '>= 2.4.3'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'coffee-rails', '~> 4.2'
