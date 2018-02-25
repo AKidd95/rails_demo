@@ -10,8 +10,8 @@
       <p><%= article.title%></p>
       <p><%= article.content %></p>
       <p><%= link_to 'Show', article_path(article) %></p>
-      <p>Written by <%= article.author %> at <%= article.created_at %></p>
+      <p> Written by <%= article.author %> at <%= article.created_at %></p>
   <% end %>
 </table>
 
-<h1><%= link_to "new article", new_article_path(article)</h1>
+  <%= link_to 'New Article', new_article_path %>
